@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FacePrivate</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/estilo.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row cabecalho">
+                <div class="col-lg-4">
+                    <img src="assets/img/faceprivate.png" width="50%" alt="FacePrivate" title="FacePrivate"/>  
+                </div>
+            </header>
+
+            <div class="row">
+                <h3 class="col-lg-12 alert alert-success" style="text-align: center;">
+                    Descubra se você está vuneravel quando o assunto é a sua Rede Social!
+                </h3>
+            </div>
+
+            <section class="row">
+                <div class="container">
+                    <div class="row">
+                        <form class="form-horizontal" action="faceprivate.php" method="POST">
+                            <fieldset>
+
+                                <!-- Form Name -->
+                                <legend>Preencha as informações abaixo e descubra se você esta seguro!</legend>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="nome">Nome</label>  
+                                    <div class="col-md-5">
+                                        <input id="nome" name="nome" type="text" placeholder="Fulano de Tal" class="form-control input-md" required="">
+
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="turma">Turma</label>  
+                                    <div class="col-md-4">
+                                        <input id="turma" name="turma" type="text" placeholder="" class="form-control input-md">
+
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="serie">Serie</label>  
+                                    <div class="col-md-4">
+                                        <input id="serie" name="serie" type="text" placeholder="" class="form-control input-md">
+
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="postagem">Quem pode ver as Suas postagens no Facebook?</label>
+                                    <div class="col-md-5">
+                                        <select id="postagem" name="postagem" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fotos">Quem pode ver as Suas Fotos?</label>
+                                    <div class="col-md-5">
+                                        <select id="fotos" name="fotos" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="videos">Quem pode ver as Seus Videos?</label>
+                                    <div class="col-md-5">
+                                        <select id="videos" name="videos" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="pessoais">Quem tem acesso a suas informações pessoais?</label>
+                                    <div class="col-md-5">
+                                        <select id="pessoais" name="pessoais" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="paginas">Quem pode ver as Páginas que você curtiu?</label>
+                                    <div class="col-md-5">
+                                        <select id="paginas" name="paginas" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="amigos">Quem pode ver sua lista de amigos?</label>
+                                    <div class="col-md-5">
+                                        <select id="amigos" name="amigos" class="form-control">
+                                            <option value="4">Somente Eu</option>
+                                            <option value="3">Somente Meus Amigos</option>
+                                            <option value="2">Amigos dos meus amigos</option>
+                                            <option value="1">Público</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Button (Double) -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="enviar"></label>
+                                    <div class="col-md-8">
+                                        <button id="enviar" type="submit" name="enviar" class="btn btn-success">Enviar</button>
+                                        <button id="limpar" type="reset" name="limpar" class="btn btn-danger">Limpar</button>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <footer class="row" style="background: #3b5998; padding: 10px; margin-top: 6%; color: #fff;">
+                
+                <div class="col-lg-12">
+                    <address>
+                        <h5>Central de Informatica</h5>
+                        <h5>
+                            <p>Rua Kaquende, 168, Centro, Sabará - MG</p>
+                            <p>(31) 3671-4333</p>
+                        </h5>
+                    </address>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

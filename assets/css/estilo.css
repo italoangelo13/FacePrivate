@@ -1,0 +1,11 @@
+.cabecalho{
+    background: #3b5998;
+    padding: 10px;
+}
+
+#rodape{
+    background: #3b5998;
+    padding: 10px;
+    clear: both;
+    color: #fff;
+}
