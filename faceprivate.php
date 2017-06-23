@@ -10,6 +10,37 @@
     $paginas = $_REQUEST['paginas'];
     $amigos = $_REQUEST['amigos'];
     
+    $pontos = $postagem + $fotos + $videos + $pessoais + $paginas + $amigos;
+    $perfil = "";
+    $img = "";
+    $texto = "";
+    $status ="";
+    
+    if ($pontos <= 6) {
+        $perfil = "Perfil Inseguro ou usado para Negócios";
+        $img = "";
+        $texto = "O seu perfil contem muitas informações privadas que acabam sendo mostradas para qualquer um na internet, pois você deixa as configurações de privacidade destas informações como publicas. É recomendado que você mantenha as suas informações pessoais, fotos e videos com uma configuração que apenas seus amigos possam visualizar, aumentando assim a sua segurança.";
+        $status = "Fraco";
+    }
+    else if ($pontos >= 7 || $pontos <= 12) {
+        $perfil = "Perfil Ainda oferece riscos";
+        $img = "";
+        $texto = "O seu perfil contem muitas informações privadas que acabam sendo mostradas para qualquer um na internet, pois você deixa as configurações de privacidade destas informações como publicas. É recomendado que você mantenha as suas informações pessoais, fotos e videos com uma configuração que apenas seus amigos possam visualizar, aumentando assim a sua segurança.";
+        $status = "Mediano";    
+    }
+    else if ($pontos >= 13 || $pontos <= 18) {
+        $perfil = "Perfil que 'pode' ser considerado Seguro";
+        $img = "";
+        $texto = "O seu perfil contem muitas informações privadas que acabam sendo mostradas para qualquer um na internet, pois você deixa as configurações de privacidade destas informações como publicas. É recomendado que você mantenha as suas informações pessoais, fotos e videos com uma configuração que apenas seus amigos possam visualizar, aumentando assim a sua segurança.";
+        $status = "Ideal";    
+    }
+    else if ($pontos > 18) {
+        $perfil = "Não existe pessoas com perfis assim.";
+        $img = "";
+        $texto = "O seu perfil contem muitas informações privadas que acabam sendo mostradas para qualquer um na internet, pois você deixa as configurações de privacidade destas informações como publicas. É recomendado que você mantenha as suas informações pessoais, fotos e videos com uma configuração que apenas seus amigos possam visualizar, aumentando assim a sua segurança.";
+        $status = "Forte";    
+    }
+    
 ?>
 <!DOCTYPE html>
 <html>
