@@ -25,7 +25,7 @@
     else if ($pontos >= 7 || $pontos <= 12) {
         $perfil = "Perfil Ainda oferece riscos";
         $img = "";
-        $texto = "O seu perfil contem muitas informações privadas que acabam sendo mostradas para qualquer um na internet, pois você deixa as configurações de privacidade destas informações como publicas. É recomendado que você mantenha as suas informações pessoais, fotos e videos com uma configuração que apenas seus amigos possam visualizar, aumentando assim a sua segurança.";
+        $texto = "O seu perfil Não contem muitas informações pessoais que estão em publico, porem, ainda pode oferecer riscos pois ainda estão visiveis para os amigos de seus amigos.";
         $status = "Mediano";    
     }
     else if ($pontos >= 13 || $pontos <= 18) {
